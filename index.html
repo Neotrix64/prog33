@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="contenido">
-        <form id="signInForm">
+        <form id="signInForm" action="">
+            <!-- Cambios de QA -->
             <h1>Sign in</h1>
             <p>and enhance your experience</p>
             <input type="email" placeholder="Email">
@@ -20,7 +21,6 @@
     </div>
 
     <script>
-        // Obtener el formulario por su ID
         var signInForm = document.getElementById("signInForm");
         signInForm.addEventListener("submit", function(event) {
             event.preventDefault();
