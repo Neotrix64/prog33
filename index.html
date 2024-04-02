@@ -8,17 +8,24 @@
 </head>
 <body>
     <div class="contenido">
-        <form action="">
-            <img src="imagenes/logofko.png" alt="">
-            <h1>Sign up for free</h1>
-            <p>and enhacer your experience</p>
+        <form id="signInForm" action="">
+            <!-- Cambios de QA -->
+            <h1>Sign in</h1>
+            <p>and enhance your experience</p>
             <input type="email" placeholder="Email">
-            <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
-            <button>Sign up</button>
-            <p>Already have an account? <a href="" class="ALogin">login</a> here</p> 
+            <button type="submit">Sign In</button>
+            <p>Don't have an account? <a href="register.html" class="ALogin">Register</a> here</p> 
             <p>By signing up, you agree to our <a href="#">Terms and Conditions</a></p>
         </form>
     </div>
+
+    <script>
+        var signInForm = document.getElementById("signInForm");
+        signInForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+    </script>
 </body>
 </html>
