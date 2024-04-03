@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenido">
+        <form id="signUpForm" action="">
+            <!-- Cambios de QA -->
+            <h1>Sign up</h1>
+            <p>Create an account to enhance your experience</p>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button type="submit">Sign Up</button>
+            <p>Already have an account? <a href="index.html" class="ALogin">Sign In</a> here</p> 
+            <p>By signing up, you agree to our <a href="#">Terms and Conditions</a></p>
+        </form>
+    </div>
+
+    <script>
+        var signUpForm = document.getElementById("signUpForm");
+        signUpForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "home.html";
+        });
+    </script>
+</body>
+</html>
